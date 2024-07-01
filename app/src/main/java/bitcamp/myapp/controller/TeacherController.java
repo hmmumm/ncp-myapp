@@ -29,7 +29,7 @@ public class TeacherController {
 
   @Autowired private TeacherService teacherService;
   @Autowired private ObjectStorageService objectStorageService;
-  private String bucketName = "bitcamp-bucket-53-member-photo";
+  private String bucketName = "ncp08-bucket-0628-member-photo-2";
 
   @PostMapping
   public Object insert(Teacher teacher, MultipartFile file) {
