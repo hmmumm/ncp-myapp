@@ -22,6 +22,11 @@ tasks.register("npm-install") {
   tasks.appNpmInstall.exec();
 }
 */
+
+processResources{
+    dependsOn "appNpmInstall"
+}
+
 task appNpmInstall(type: NpmTask) {
   description = "Installs dependencies from package.json"
   workingDir = file("${projectDir}/src/main/resources/static");
